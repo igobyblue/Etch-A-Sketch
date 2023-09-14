@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="restart.css">
+    <title>Etch-a-sketch</title>
+</head>
+<body>
+    <div class="container"></div>
+        <div class="title">Etch-a-sketch</div>
+        <div class="detector">
+            <div class="writeOff"></div>
+        </div>
+        <div class="outerBody">
+            <div class="board"></div>
+        </div>
+        <div class="buttons">
+            <button onclick="buttonColor('black')">Black</button>
+            <button onclick="buttonColor('white')">Eraser</button>
+            <button onclick="buttonColor('gray')">Gray</button>
+            <button onclick="buttonColor('random')">Random</button>
+            <button onclick="resetBoard()">Reset</button>
+        </div>
+        <div class="inputSection">
+            <input type="text" placeholder="Size of Board" value="16" onchange="changeSize(this.value)"/>
+            <button>Set Size</button>
+        </div>
+        <div class="error"> Please Enter a number 2 - 100</div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
